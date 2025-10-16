@@ -1,0 +1,96 @@
+.face-registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6b73ff 0%, #000dff 100%);
+  padding: 20px;
+}
+
+.face-registration-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+.face-registration-card h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.instructions {
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto 25px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+video {
+  width: 100%;
+  display: block;
+}
+
+.capture-button {
+  width: 100%;
+  max-width: 200px;
+  padding: 12px;
+  background: #6b73ff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 0 auto;
+}
+
+.capture-button:hover {
+  background: #5a63e6;
+  transform: translateY(-2px);
+}
+
+.capture-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.message {
+  padding: 12px;
+  border-radius: 5px;
+  margin: 20px 0;
+  font-weight: 500;
+}
+
+.message.success {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.message.error {
+  background: #ffebee;
+  color: #c62828;
+}
+
+@media (max-width: 480px) {
+  .face-registration-card {
+    padding: 20px;
+  }
+  
+  .capture-button {
+    max-width: 100%;
+  }
+}
